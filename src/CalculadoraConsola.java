@@ -60,7 +60,8 @@ public class CalculadoraConsola {
                         System.out.println("Error: División por cero.");
                     }
                     break;
-                      case 5:
+
+                case 5:
                     System.out.println("Ingrese un ángulo en radianes:");
                     double angulo = scanner.nextDouble();
                     System.out.println("Resultado: " + Math.sin(angulo));
@@ -90,6 +91,21 @@ public class CalculadoraConsola {
                     num1 = scanner.nextDouble();
                     int potencia = scanner.nextInt();
                     System.out.println("Resultado: " + Math.pow(num1, potencia));
+                    break;
+
+                    case 10:
+                    System.out.println("Ingrese el monto y el porcentaje de IVA:");
+                    num1 = scanner.nextDouble();
+                    double iva = scanner.nextDouble();
+                    System.out.println("Resultado: " + (num1 + (num1 * iva / 100)));
+                    break;
+                    
+                case 11:
+                    System.out.println("Saliendo de la calculadora...");
+                    break;
+                    
+                default:
+                    System.out.println("Opción no válida. Por favor, intente nuevamente.");
                     break;
             }
             
