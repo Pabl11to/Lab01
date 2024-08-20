@@ -77,7 +77,20 @@ public class CalculadoraConsola {
                     angulo = scanner.nextDouble();
                     System.out.println("Resultado: " + Math.tan(angulo));
                     break;
-                
+
+                    case 8:
+                    System.out.println("Ingrese un número y el valor de la raíz:");
+                    num1 = scanner.nextDouble();
+                    int raiz = scanner.nextInt();
+                    System.out.println("Resultado: " + Math.pow(num1, 1.0 / raiz));
+                    break;
+                    
+                case 9:
+                    System.out.println("Ingrese un número y el valor de la potencia:");
+                    num1 = scanner.nextDouble();
+                    int potencia = scanner.nextInt();
+                    System.out.println("Resultado: " + Math.pow(num1, potencia));
+                    break;
             }
             
             System.out.println();
