@@ -60,7 +60,23 @@ public class CalculadoraConsola {
                         System.out.println("Error: División por cero.");
                     }
                     break;
+                      case 5:
+                    System.out.println("Ingrese un ángulo en radianes:");
+                    double angulo = scanner.nextDouble();
+                    System.out.println("Resultado: " + Math.sin(angulo));
+                    break;
                     
+                case 6:
+                    System.out.println("Ingrese un ángulo en radianes:");
+                    angulo = scanner.nextDouble();
+                    System.out.println("Resultado: " + Math.cos(angulo));
+                    break;
+                    
+                case 7:
+                    System.out.println("Ingrese un ángulo en radianes:");
+                    angulo = scanner.nextDouble();
+                    System.out.println("Resultado: " + Math.tan(angulo));
+                    break;
                 
             }
             
